@@ -1,5 +1,5 @@
 -- Create and use the database
-CREATE DATABASE IF NOT EXISTS nurseeuip_track;
+CREATE DATABASE IF NOT EXISTS nurseequip_track;
 USE nurseeuip_track;
 
 -- Users table with password hashing
@@ -82,4 +82,5 @@ INSERT INTO admins (full_name, email, admin_id, password_hash, contact_number) V
 
 -- Insert sample user with hashed password (password: 2024001)
 INSERT INTO users (full_name, email, student_id, password_hash, contact_number, borrow_chance, last_chance_reset) VALUES
+
 ('Test Student', 'student@test.com', '2024001', '$2y$10$YourHashedPasswordHere', '09876543210', 5, CURDATE());
